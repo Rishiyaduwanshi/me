@@ -1,0 +1,18 @@
+/* Initial hidden state */
+section {
+    opacity: 0;
+    transform: translateY(50px); /* Push the section down initially */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Class to animate section when it enters */
+.section-in {
+    opacity: 1;
+    transform: translateY(0); /* Move section back to normal */
+}
+
+/* Class for section out (optional, if you want fade-out) */
+.section-out {
+    opacity: 0;
+    transform: translateY(50px); /* Push section down when it goes out */
+}

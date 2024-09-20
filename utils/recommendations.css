@@ -1,0 +1,84 @@
+.recommendations-section {
+    background-color: var(--rishi-bg-color);
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .recommendations-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--rishi-text-color);
+  }
+  
+  .recommendations-section p {
+    font-size: 1.2em;
+    color: var(--rishi-text-color);
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+  
+  .referral-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .referral-card {
+    border: 1px solid var(--rishi-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+
+  }
+  
+  .referral-card:hover {
+    box-shadow: 0 8px 16px rgba(11, 9, 9, 0.2);
+  }
+  
+  .referral-card img {
+    max-width: 150px;
+    margin-bottom: 15px;
+    border-radius: 80px;
+  }
+  
+  .referral-card h3 {
+    font-size: 1.5em;
+    color: var(--rishi-color);
+    margin-bottom: 10px;
+  }
+
+  
+  .referral-card p {
+    color: var(--rishi-text-color);
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .hostinger-btn-logo {
+    display: inline-block;
+    background-color: #673de6;
+    color: var(--rishi-text-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+  }
+  
+ 
+  .hostinger-btn-logo:hover{
+    transform: scale(1.2); /* Scale up on hover */
+      color: aliceblue;
+  }
+
+
+  .digital-btn-logo {
+    transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+}
+
+.digital-btn-logo:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}

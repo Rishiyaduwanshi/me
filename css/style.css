@@ -1,0 +1,859 @@
+/***************************************
+========================================
+
+	Author Name   : Themeplaza
+	This is HTML5 template
+	Template Name : Razu Personal Portfolio HTML Template
+	Version: 1.0
+	
+****************************************
+=======================================/
+
+/* ----------------------------------------------------------------
+    [ 01 Start Basics ]
+-----------------------------------------------------------------*/
+
+:root{
+    --rishi-color : rgb(102, 107, 214);
+    --rishi-text-color :#fff;
+    --rishi-bg-color : #00002c;
+    /* --rishi-border-color */
+    --rishi-footer-color :#0d0d3c;
+
+}
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  word-wrap: break-word;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #333333;
+    background-color: var(--rishi-bg-color);
+    overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	color: #333333;
+	font-weight: 600;
+}
+html {
+	scroll-behavior: smooth;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+ul{
+	padding: 0;
+	list-style: none;
+}
+p {
+    font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 15px;
+    color: var(--rishi-text-color);
+    letter-spacing: 0;
+}
+a:hover{
+	text-decoration: none;
+	outline: none;
+}
+.text_white{
+	color: var(--rishi-text-color);
+}
+.padding_0{
+	padding: 0;
+}
+.dark_bg{
+	background: var(--rishi-bg-color);
+}
+/* START PRELOADER DESIGN */
+.preloader {
+	background: var(--rishi-text-color);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;	
+}
+.spinner {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	font-size: 10px;
+	text-indent: -12345px;
+	z-index: 10000;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--rishi-color) ;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+.dark_preloader .double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--rishi-color);
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+/* END PRELOADER DESIGN */
+
+/* Start Section-Padding */
+.section_padding{
+	padding: 40px 0;
+}
+/* End Section-Padding */
+
+/* Start Section-Heading */
+.section_heading{
+    padding-bottom: 40px;
+}
+.section_heading h2{
+    font-size: 48px;
+    font-weight: 700;
+	text-transform: capitalize;
+    color: var(--rishi-text-color);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.section_heading h2 span{
+	color: var(--rishi-color);
+}
+.section_heading p{
+	margin: 20px 0px 20px 0px;
+	color: var(--rishi-text-color);
+}
+.section_heading .sm_border{
+    display: block;
+    height: 2px;
+    width: 70px;
+    margin-bottom: 15px;
+    bottom: -5px;
+    position: relative;
+    left: 50%;
+    background-color: var(--rishi-color);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+/* End Section-Heading */
+
+/* ----------------------------------------------------------------
+    [ End Basics ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 15 Start Top-control ]
+-----------------------------------------------------------------*/
+.topcontrol{
+    border: 2px solid var(--rishi-color);
+    border-radius: 80px;
+    bottom: 5px;
+    margin-bottom: 80px;
+    color: var(--rishi-color);
+    cursor: pointer;
+    font-size: 18px;
+    height: 45px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    padding: 7px 10px;
+    position: fixed;
+    margin-right: 10px;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    /* width: 45px; */
+    z-index: 99;
+}
+.topcontrol:hover{
+    background: var(--rishi-color);
+	border: 2px solid var(--rishi-color);
+    color: var(--rishi-text-color);
+}
+/* ----------------------------------------------------------------
+    [ End Top-control ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 02 Start Buttons ]
+-----------------------------------------------------------------*/
+/* Start Btn-Style */
+.main_btn{
+	background: var(--rishi-color);
+    color: var(--rishi-text-color);
+    font-size: 13px;
+    margin-top: 25px;
+    text-transform: capitalize;
+    padding: 16px 28px;
+    letter-spacing: 0.5px;
+	border-radius: 30px;
+	font-weight: 600;
+	border: 1px solid var(--rishi-color);
+    line-height: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 0s;
+}
+.main_btn:hover{
+    background: transparent;
+	border: 1px solid var(--rishi-color);
+	color: var(--rishi-text-color);
+}
+/* ----------------------------------------------------------------
+    [ End Buttons ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 03 Start Header ]
+-----------------------------------------------------------------*/
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+.navbar-brand p{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+	margin: -8px 10px 10px 0px;
+    letter-spacing: 1px;
+    color: var(--rishi-color);
+	font-family: 'Poppins', sans-serif;
+}
+.navbar-default.sticky_menu .navbar-brand p{
+    color: var(--rishi-color);
+}
+.navbar-default .navbar-nav > li > a {
+    color: var(--rishi-text-color);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+    color: var(--rishi-text-color);
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+#nav li.current a {
+	color: var(--rishi-color);
+	background-color: transparent;
+}
+.main_header.sticky_menu {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    background: var(--rishi-bg-color);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+.main_header.sticky_menu .navbar-nav > li > a {
+	color: var(--rishi-text-color);
+	transition: all 0.3s ease;
+}
+.main_header.dark_bg_menu.sticky_menu .navbar-nav > li > a{
+	color: var(--rishi-text-color) !important;
+	transition: all 0.3s ease;
+}
+.main_header.sticky_menu .navbar-nav > li > a:hover{ color: var(--rishi-color) !important }
+.main_header.sticky_menu .navbar-nav>.active>a,
+.main_header.dark_bg_menu.sticky_menu .navbar-nav > li > a:hover,
+.main_header.sticky_menu .navbar-nav>.active>a:hover,
+.main_header.sticky_menu .navbar-nav>.active>a:focus{
+    color: var(--rishi-color) !important;
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    border: none;
+    padding: 0;
+	color: var(--rishi-color);
+    font-size: 20px;
+	margin-top: 10px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: var(--rishi-text-color);
+}
+.main_header.sticky_menu .navbar-toggle .icon-bar {
+    background-color: var(--rishi-color);
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+/* ----------------------------------------------------------------
+     [ End Header ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+     [ 04 Start Banner ]
+-----------------------------------------------------------------*/
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	top: 0;
+}
+.main_banner{
+	height: 650px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.banner_bg{
+	background-image: url(../images/Portfolio\ Banner2.jpg);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.banner_bg:before{
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.2);
+}
+.banner_content{
+	margin-top: 270px;
+	text-align: center;
+}
+.banner_content h1{
+    color: var(--rishi-text-color);
+    font-size: 60px;
+	text-transform: capitalize;
+    margin: 15px 0 10px;
+}
+.banner_content h1 span .fw_600{
+	font-weight: 600;
+}
+.banner_content h1 span .fw_300{
+	font-weight: 600;
+}
+.banner_content .banner_btn{
+	margin-right: 15px;
+}
+.banner_btn{
+	background: var(--rishi-color);
+	border: 2px solid var(--rishi-color);
+	text-decoration: none;
+	padding: 8px 30px;
+	display: inline-block;
+	margin-top: 30px;
+	color: var(--rishi-text-color);
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 0s;
+	border-radius: 50px;
+}
+.banner_btn:hover{
+	background: transparent;
+	border: 2px solid var(--rishi-color);
+    color: var(--rishi-text-color);
+}
+#round{
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+	z-index: 9;
+}
+/* ----------------------------------------------------------------
+    [ End Banner ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 05 Start About ]
+-----------------------------------------------------------------*/
+.about_image{
+	position: relative;
+	z-index: 9;
+	width: 90%;
+}
+.about_image img{
+	padding: 10px 10px 10px 10px;
+	border: 1px solid #464646;
+}
+.about_content_area{
+	margin-top: 10px;
+}
+.single_about h4{
+    font-size: 30px;
+	text-transform: capitalize;
+    margin: 0 0 20px;
+	font-weight: 700;
+	color: var(--rishi-text-color);
+}
+.single_about h4 span{
+	color: var(--rishi-color);
+}
+.about_details {
+    margin-top: 20px;
+}
+.about_details li{
+	color: #333;
+	display: inline-block;
+	margin-top: 15px;
+	width: 49%;
+}
+.about_details span{
+    color: var(--rishi-footer-color);
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+    width: 25%;
+}
+.about_details span{
+	color: var(--rishi-text-color);
+}
+.ct_about{
+	margin: 10px 0;
+	color: var(--rishi-text-color);
+}
+.ct_about span i{
+	margin-right: 5px;
+}
+.single_about a i{
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #ddd;
+}
+/* ----------------------------------------------------------------
+    [ End About ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 06 Start Service ]
+-----------------------------------------------------------------*/
+.single-service{
+	background: none;	
+    padding: 36px 20px;
+	border: 1px solid #464646;
+	margin-bottom: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+.single-service i {
+	background: var(--rishi-bg-color);
+	border: 1px solid var(--rishi-color);
+	color: var(--rishi-color);
+	width: 50px;
+    height: 50px;
+	line-height: 50px;
+	border-radius: 30px;
+	text-align: center;
+	transition: all 0.4s ease;
+    font-size: 24px;
+    display: inline-block;
+}
+.single-service:hover i{
+	background: var(--rishi-color);
+	color: var(--rishi-text-color);
+	border: 1px solid var(--rishi-color);
+}
+.single-service h4{
+	color: var(--rishi-text-color);
+    font-size: 18px;
+    margin-top: 25px;
+    text-transform: capitalize;
+	transition: all 0.4s ease;
+}
+.single-service p{
+	transition: all 0.4s ease;
+	color: var(--rishi-text-color);
+	margin-top: 15px;
+}
+/* ----------------------------------------------------------------
+    [ End Service ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 10 Start Resume ]
+-----------------------------------------------------------------*/
+.resume-container h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    font-weight: 600;
+	color: var(--rishi-text-color);
+}
+.resume-container h3 i{
+    margin-right: 15px;
+    font-size: 30px;
+	color: var(--rishi-color);
+}
+.single_resume strong{
+    color: var(--rishi-text-color);
+    font-size: 14px;
+}
+.single_resume h5{
+    font-size: 16px;
+    font-weight: 700;
+	color: var(--rishi-color);
+}
+.single_resume{
+    border: 1px solid #464646;
+    display: block;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+	position: relative;
+}
+.single_resume:after{
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    height: 2px;
+    background: var(--rishi-color);
+    position: absolute;
+    transition: all 0.3s ease;
+}
+.single_resume:hover:after{
+    width: 100%;
+}
+/* ----------------------------------------------------------------
+    [ End Resume ]
+-----------------------------------------------------------------*/
+
+/* **----------envelope css ------------* */
+.fa-envelope{
+    font-size: 2rem;
+}
+/* ----------------------------------------------------------------
+    [ 08 Start Works ]
+-----------------------------------------------------------------*/
+.work_filter ul{
+	padding: 0;
+	list-style: none;
+	margin-bottom: 30px;
+}
+.work_filter ul li{
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+	line-height: 15px;
+	padding: 10px 20px;
+	background: rgba(174, 157, 120, 0.10);
+	border-radius: 20px;
+	color: var(--rishi-text-color);
+    letter-spacing: 0.5px;
+    margin: 0 13px 20px;
+    transition: all 0.5s ease-in-out;
+}
+.work_filter ul li:hover{
+	background: var(--rishi-color);
+    color: var(--rishi-text-color);
+}
+.work_filter .active{
+    color: var(--rishi-text-color);
+	border-color: var(--rishi-color);
+    background: var(--rishi-color);
+}
+.work_content_area .item-img{
+	position: relative;
+	margin-bottom: 30px;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+}
+.work_content_area .item-img:hover{
+	-webkit-box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
+	box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.work_content_area .item-img:hover .item-img-overlay{
+	visibility: visible;
+	opacity: 1;
+}
+.overlay-info{
+	margin-top: 90px;
+}
+.work_content_area .item-img-overlay{
+	text-align: center;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	background: rgba(7,10,50,0.6);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.work_content_area .item-img-overlay .icon{
+	position: absolute;
+	right: 30px;
+	bottom: 50px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 130px;
+	margin-bottom: 20%;
+	text-align: center;
+	font-size: 20px;
+	color: var(--rishi-color);
+}
+/* ----------------------------------------------------------------
+    [ End Works ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 09 Start Counter ]
+-----------------------------------------------------------------*/
+#counter_area{
+    background: url(../images/counter.jpg);
+	position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#counter_area:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.single_counter h3{
+	font-size: 30px;
+	color: var(--rishi-color);
+}
+.single_counter span{
+	font-size: 30px;
+	font-weight: 600;
+}
+.single_counter h5{
+    font-size: 16px;
+    color: var(--rishi-text-color);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+/* ----------------------------------------------------------------
+    [ End Counter ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 12 Start Blog ]
+-----------------------------------------------------------------*/
+.single_blog{
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+	display: block;
+	border: 1px solid #464646;
+	overflow: hidden;
+}
+.single_blog:hover img{
+	-webkit-transform: rotate(3deg) scale(1.1, 1.1);
+	-ms-transform: rotate(3deg) scale(1.1, 1.1);
+	transform: rotate(3deg) scale(1.1, 1.1);
+}
+.single_blog .blog-image{
+	overflow: hidden;
+}
+.single_blog img{
+	width: 100%;
+    border-radius: 3px 3px 0 0;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.5s;
+}
+.blog-thumb{
+	background: transparent;
+	border-radius: 3px;
+	text-align: left;
+}
+.blog-thumb small{
+	color: var(--rishi-color);
+	font-weight: 500;
+	display: block;
+}
+.blog-thumb small .fa{
+	margin-right: 5px;
+}
+.blog-thumb small,
+.blog-thumb small + span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.blog-thumb small + span{
+	color: var(--rishi-text-color);
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-left: 2px;
+}
+.blog-thumb h4{
+	color: var(--rishi-text-color);
+    padding: 0px;
+	text-transform: capitalize;
+    font-size: 24px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.blog-thumb h4:hover{
+	color: var(--rishi-color);
+}
+.blog-info{
+	background: none;
+	padding: 20px 30px;
+}
+.blog-info .blog_btn{
+	background: var(--rishi-color);
+	color: var(--rishi-text-color);
+    font-size: 14px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    transition: all 0.4s ease-in-out 0s;
+	padding: 7px 18px;
+    letter-spacing: 0.5px;
+	border-radius: 30px;
+	font-weight: 600;
+	border: 2px solid var(--rishi-color);
+}
+.blog-info .blog_btn:hover{
+	color: var(--rishi-text-color);
+	background: transparent;
+	border: 2px solid var(--rishi-color);
+}
+/* ----------------------------------------------------------------
+    [ End Blog ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 13 Start Contact ]
+-----------------------------------------------------------------*/
+.form .form-group input{
+	background: transparent;
+	border-color: #464646;
+    height: 40px;
+    border-radius: 0;
+	box-shadow: none;
+}
+.form .form-group input:focus{
+	border-color: var(--rishi-color);
+    color: var(--rishi-text-color);
+}
+.form .form-group textarea{
+	background: transparent;
+	border-color: #464646;
+	margin-top: 10px;
+	padding-bottom: 5%;
+    border-radius: 0;
+	box-shadow: none;
+}
+.form .form-group textarea:focus{
+	border-color: var(--rishi-color);
+    color: var(--rishi-text-color);
+}
+/* ----------------------------------------------------------------
+    [ End Contact ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 14 Start Footer ]
+-----------------------------------------------------------------*/
+.footer{
+    padding: 30px 0 20px;
+    background: var(--rishi-footer-color);
+}
+.copy-text p{
+	color: var(--rishi-text-color);
+}
+/* ----------------------------------------------------------------
+    [ End Footer ]
+-----------------------------------------------------------------*/

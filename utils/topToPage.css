@@ -1,0 +1,33 @@
+/* Go to Top Button Styles */
+.go-top-button {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom */
+  left: 20px; /* Distance from the left */
+  background-color: var(--rishi-bg-color); /* Primary button color */
+  color: var(--rishi-color); /* Icon color */
+  border: 1px solid var(--rishi-color);
+  border-radius: 50%; /* Circular shape */
+  width: 40px; /* Button width */
+  height: 40px; /* Button height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Enhanced shadow for a 3D effect */
+  text-decoration: none;
+  font-size: 20px; /* Icon size */
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 99; /* Ensures the button is on top of other content */
+}
+
+.go-top-button:hover {
+  color: #fff;
+}
+
+.go-top-button:focus {
+  outline: none; /* Remove default outline */
+}
+
+.go-top-button i {
+  margin: 0; /* Remove default margin around the icon */
+}
