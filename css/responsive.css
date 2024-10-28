@@ -127,4 +127,10 @@
 	.banner_content h1{
 		font-size: 25px !important;
 	}
+	.ct_about{
+		font-size: 14px !important;
+	}
+	.about_details span{
+		width: 33% !important;
+	} 
 }

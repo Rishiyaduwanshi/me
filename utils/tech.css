@@ -1,6 +1,6 @@
 .tech-section {
     background-color: var(--rishi-bg-color);
-    padding: 50px;
+    /* padding: 50px; */
     text-align: center;
 }
 
@@ -15,37 +15,66 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px; /* Space between icons */
+    gap: 20px;
+    /* Space between icons */
 }
 
 .tech-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Space between icons */
+    gap: 20px;
+    /* Space between icons */
 }
 
 .tech-icons i,
 .tech-icon {
-    font-size: 3em; /* Size for icons */
-    color: var(--rishi-color); /* Base color for icons */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transitions */
+    font-size: 3em;
+    /* Size for icons */
+    color: var(--rishi-color);
+    /* Base color for icons */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* Smooth transitions */
     padding: 10px;
-    background-color: var(--rishi-bg-color); /* Background color for contrast */
-    border-radius: 50%; /* Circular background */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Enhanced shadow for better visibility */
+    background-color: var(--rishi-bg-color);
+    /* Background color for contrast */
+    border-radius: 50%;
+    /* Circular background */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    /* Enhanced shadow for better visibility */
 }
 
 .tech-icons i:hover,
 .tech-icon:hover {
-    transform: scale(1.2); /* Slight scaling effect */
-    filter: drop-shadow(0 0 10px var(--rishi-color)); /* Enhanced shadow on hover */
-    color: var(--rishi-text-color); /* Change icon color on hover */
-    background-color: var(--rishi-color); /* Highlight background on hover */
+    transform: scale(1.2);
+    /* Slight scaling effect */
+    filter: drop-shadow(0 0 10px var(--rishi-color));
+    /* Enhanced shadow on hover */
+    color: var(--rishi-text-color);
+    /* Change icon color on hover */
+    background-color: var(--rishi-color);
+    /* Highlight background on hover */
 }
 
 .tech-icon {
-    width: 60px; /* Adjust size as necessary */
-    height: 60px; /* Adjust size as necessary */
-    fill: var(--rishi-text-color); /* Adjust fill color if needed */
+    width: 60px;
+    /* Adjust size as necessary */
+    height: 60px;
+    /* Adjust size as necessary */
+    fill: var(--rishi-text-color);
+    /* Adjust fill color if needed */
+}
+
+
+@media only screen and (max-width: 480px) {
+    .tech-section h2 {
+        font-size: 2em
+    }
+
+    .tech-icons i,
+    .tech-icon {
+        /* font-size: 2em; */
+        padding: 8px;
+    }
+
 }
