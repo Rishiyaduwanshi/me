@@ -1,0 +1,24 @@
+{
+    "sectionContent": {
+        "heading": "Recommendations",
+        "description": "Below are some of the best tools. If you're looking for great services, feel free to check them out!"
+    },
+    "referrals": {
+        "hostinger": {
+            "name": "Hostinger",
+            "description": "Fast, reliable, and affordable web hosting. Use my referral to get a 20% discount on your hosting plan.",
+            "image": "./images/hostinger-logo.png",
+            "url": "https://hostinger.in?REFERRALCODE=1RISHIRANJA78",
+            "isCustomButton": false
+        },
+        "digitalOcean": {
+            "name": "DigitalOcean",
+            "description": "Scalable cloud infrastructure that powers my applications. Sign up through my link to receive $200 in free credits for 60 days.",
+            "image": "./images/digital-ocean-logo.png",
+            "url": "https://www.digitalocean.com/?refcode=1001bd08e0c6&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge",
+            "buttonImage": "https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg",
+            "isCustomButton": true
+        }
+    }
+}
+
