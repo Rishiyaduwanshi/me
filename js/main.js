@@ -51,7 +51,7 @@
 		
 		/* END LIGHTBOX JS */
 		
-		/* START COUNDOWN JS */
+		/* START COUNTDOWN JS */
 			$('#counter_area').on('inview', function(event, visible, visiblePartX, visiblePartY) {
 				if (visible) {
 					$(this).find('.counter').each(function () {
@@ -67,17 +67,10 @@
 					$(this).unbind('inview');
 				}
 			});
-		/* END COUNDOWN JS */
+		/* END COUNTDOWN JS */
 		
 	});	
 	
-		/*PRELOADER JS*/
-			$(window).on('load', function() {  
-				$('.spinner').fadeOut();
-				$('.preloader').delay(350).fadeOut('slow'); 
-			}); 
-		/*END PRELOADER JS*/
-		
 		// Wow
 			new WOW().init();
 

@@ -85,15 +85,6 @@
 
 <body data-spy="scroll" data-offset="80">
 
-	<!-- START PRELOADER -->
-	<div class="preloader">
-		<div class="spinner">
-			<div class="double-bounce1"></div>
-			<div class="double-bounce2"></div>
-		</div>
-	</div>
-	<!-- END PRELOADER -->
-
 	<!-- START NAVBAR -->
 	<header class="header_area">
 		<div class="main_header navbar navbar-default menu-top">
@@ -717,13 +708,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function () {
-			emailjs.init("Qi7X8NGxS37QKj_sO");  // Initialize with your user ID
+			emailjs.init("Qi7X8NGxS37QKj_sO"); 
 		})();
 	</script>
 
 	<script>
 		document.getElementById('contactForm').addEventListener('submit', function (event) {
-			event.preventDefault(); // Prevent default form submission
+			event.preventDefault(); 
 
 			const form = this;
 			const templateParams = {
@@ -733,16 +724,14 @@
 				message: form.message.value
 			};
 
-			// Sending the email to yourself (personal portfolio)
 			emailjs.send('service_g5qhvor', 'template_bk9syox', templateParams)
 				.then(function (response) {
 					console.log('Success', response.status, response.text);
 					alert("Message Sent Successfully!");
 
-					// Send acknowledgment email to the user
 					const acknowledgmentParams = {
-						name: form.name.value,  // User's name
-						email: form.email.value  // User's email
+						name: form.name.value, 
+						email: form.email.value
 					};
 
 					emailjs.send('service_g5qhvor', 'template_f3gkbuv', acknowledgmentParams)
@@ -760,21 +749,19 @@
 		});
 	</script>
 
-	<script>
+	<script >
 		async function loadRecommendations() {
 			try {
 				const response = await fetch('/data/referrals.json');
 				const data = await response.json();
 				
-				// Update section content
 				document.getElementById('recommendationsHeading').textContent = 
 					data.sectionContent.heading;
 				document.getElementById('recommendationsDescription').textContent = 
 					data.sectionContent.description;
 				
-				// Load referral cards
 				const container = document.getElementById('referralCardsContainer');
-				container.innerHTML = ''; // Clear existing cards
+				container.innerHTML = '';
 				
 				Object.entries(data.referrals).forEach(([key, referral]) => {
 					container.innerHTML += `
@@ -799,7 +786,6 @@
 			}
 		}
 		
-		// Load everything when page loads
 		document.addEventListener('DOMContentLoaded', loadRecommendations);
 	</script>
 
