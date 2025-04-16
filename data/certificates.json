@@ -1,0 +1,40 @@
+{
+    "certificates": [
+        {
+            "name": "Ethical Hacking",
+            "image": "images/certificates/NPTEL Ethical Hacking.jpg",
+            "issuer": "NPTEL",
+            "date": "October 2024",
+            "description" : "Covered Ethical hacking fundamentals, penetration testing, and security concepts."
+        },
+        {
+            "name": "Cloud Computing with AWS",
+            "image": "images/certificates/Gokboru Aws Certificate.jpg",
+            "issuer": "Gokboru",
+            "date": "October 2023",
+            "description" : "Covered AWS fundamentals, cloud architecture, and deployment"
+        },
+        {
+            "name": "Html, CSS and JavaScript",
+            "image": "images/certificates/Coursera VWR6NTHT9R4J.jpg",
+            "issuer": "Coursera",
+            "date": "November 2023",
+            "description" : "Covered HTML, CSS, and JavaScript fundamentals for web development."
+        },
+        {
+            "name": "Server side javascript with node js",
+            "image": "images/certificates/Coursera 66VW8MV86P3X.jpg",
+            "issuer": "Coursera",
+            "date": "November 2023",
+            "description" : "Covered server-side JavaScript with Node.js, including Express.js and MongoDB."
+        },
+        {
+            "name": "Computer Networking",
+            "image": "images/certificates/UC-869c2b5f-fe38-490e-a160-163940495c45.jpg",
+            "issuer": "Coursera",
+            "date": "November 2023",
+            "description" : "Covered computer networking fundamentals, including TCP/IP, network protocols, and network security."
+        }
+        
+    ]
+}

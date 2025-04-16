@@ -70,16 +70,10 @@
 	<link rel="stylesheet" href="./utils/topToPage.css">
 	<link rel="stylesheet" href="./utils/recommendations.css">
 	<link rel="stylesheet" href="./utils/tech.css">
+	<link rel="stylesheet" href="./utils/css/certifications.css">
 	<link rel="stylesheet" href="./utils/scrollbar.css">
 	<link rel="stylesheet" href="./utils/animations.css">
 	<script src="./utils/animations.js"></script>
-
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
 </head>
 
 <body data-spy="scroll" data-offset="80">
@@ -113,7 +107,7 @@
 								<li><a href="#technologies">Technologies</a></li>
 								<li><a href="#service">Service</a></li>
 								<li><a href="#resume">Resume</a></li>
-								<li><a href="#github-showcase">GitHub</a></li>
+								<li><a href="#certifications">Certificates</a></li>
 								<li><a href="#recommendations">Recommendations</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
@@ -249,7 +243,8 @@
 	<section class="tech-section dark_bg section_padding" id="technologies">
 		<h2>Technologies</h2>
 		<div class="tech-container">
-			<div class="tech-icons">
+			
+			<div class="tech-icons" >
 				<i class="devicon-nodejs-plain-wordmark colored"></i>
 				<i class="devicon-git-plain colored"></i>
 				<i class="devicon-docker-plain colored"></i>
@@ -270,7 +265,6 @@
 
 				<i class="devicon-ubuntu-plain colored"></i>
 				<img src="./images/technologies/php.svg" class="tech-icon" alt="php icon">
-				<!-- <img src="./images/technologies/ejs.svg" class="tech-icon" alt="ejs icon"> -->
 				<img src="./images/technologies/github.svg" class="tech-icon" alt="github icon">
 				<i class="devicon-bash-plain "></i>
 				<i class="devicon-digitalocean-plain colored"></i>
@@ -487,7 +481,38 @@
 	</section>
 	<!-- END GITHUB SHOWCASE -->
 
-<!-- *--------------- START Recommendations------------------------* -->
+<section id="certifications" class="dark_bg section_padding">
+    <div class="container">
+        <div class="section_heading text-center">
+            <h2>My <span>Certifications</span></h2>
+            <p>Professional certifications that validate my expertise</p>
+            <div class="sm_border"></div>
+        </div>
+
+        <div style="position: relative;">
+            <button class="cert-scroll-btn cert-scroll-left">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+            
+            <div class="certificates-container" id="certificatesContainer">
+                <!-- Certificates will be loaded dynamically -->
+            </div>
+
+            <button class="cert-scroll-btn cert-scroll-right">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="cert-modal">
+        <span class="close-modal">&times;</span>
+        <img id="certModalImg" class="modal-content">
+    </div>
+</section>
+<!-- END CERTIFICATIONS -->
+
+<!-- START RECOMMENDATIONS -->
 <section id="recommendations" class="recommendations-section dark_bg section_padding">
     <h2 id="recommendationsHeading">Recommendations</h2>
     <p id="recommendationsDescription">Loading...</p>
@@ -574,6 +599,7 @@
 	<script src="./utils/currentYear.js"></script>
 	<script src="./utils/topToPage.js"></script>
 	<script src="./utils/github.js"></script>
+	<script src="utils/js/certificates.js"></script>
 	<!-- End Latest jQuery -->
 
 	
