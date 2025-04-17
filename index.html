@@ -61,8 +61,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800" rel="stylesheet">
 	<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 	<link href="fonts/font-awesome.min.css" rel="stylesheet" />
-	<!-- <link href="fonts/themify-icons.css" rel="stylesheet" /> -->
-	<!-- <link href="fonts/etline.css" rel="stylesheet" /> -->
 	<link href="css/plugins.css" rel="stylesheet" />
 	<link href="css/responsive.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
@@ -76,6 +74,7 @@
 	<link rel="stylesheet" href="./utils/css/education.css">
 	<link rel="stylesheet" href="./utils/css/projects.css">
 	<script src="./utils/animations.js"></script>
+	<script src="./utils/js/dropdown.js"></script>
 </head>
 
 <body data-spy="scroll" data-offset="80">
@@ -106,13 +105,32 @@
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="#home">Home</a></li>
 								<li><a href="#about">About</a></li>
-								<li><a href="#technologies">Technologies</a></li>
-								<li><a href="#service">Service</a></li>
-								<li><a href="#education">Education</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#certifications">Certificates</a></li>
-								<li><a href="#recommendations">Recommendations</a></li>
+								<li class="nav-dropdown">
+									<a href="#" class="dropdown-toggle">Skills & Work</a>
+									<ul class="dropdown-menu">
+										<li><a href="#technologies">Technologies</a></li>
+										<li><a href="#service">Services</a></li>
+										<li><a href="#projects">Projects</a></li>
+									</ul>
+								</li>
+								<li class="nav-dropdown">
+									<a href="#" class="dropdown-toggle">Achievements</a>
+									<ul class="dropdown-menu">
+										<li><a href="#education">Education</a></li>
+										<li><a href="#certifications">Certificates</a></li>
+										<li><a href="#testimonials">Testimonials</a></li>
+									</ul>
+								</li>
+								<li class="nav-dropdown">
+									<a href="#" class="dropdown-toggle">More</a>
+									<ul class="dropdown-menu">
+										<li><a href="#recommendations">Recommendations</a></li>
+									</ul>
+								</li>
 								<li><a href="#contact">Contact</a></li>
+								<li class="nav-blog-container">
+									<a href="#blog" class="blog-link">Blog <i class="fa fa-external-link"></i></a>
+								</li>
 							</ul>
 						</nav>
 					</div>

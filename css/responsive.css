@@ -134,3 +134,78 @@
 		width: 33% !important;
 	} 
 }
+
+@media only screen and (max-width: 991px) {
+    nav#navbar {
+        background: var(--rishi-bg-color);
+        border: 1px solid var(--rishi-color);
+        border-radius: 8px;
+        padding: 15px;
+        position: absolute;
+        right: 15px;
+        text-align: center;
+        top: 35px;
+        width: 280px;
+        z-index: 1000;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: var(--rishi-text-color) !important;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 8px 15px;
+        margin: 5px 0;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: var(--rishi-color) !important;
+        background-color: transparent;
+    }
+
+    .nav-blog-container {
+        text-align: center;
+        padding: 10px 0;
+        margin: 5px 0;
+    }
+
+    .blog-link {
+        display: inline-block;
+        width: auto;
+        min-width: 120px;
+        text-align: center;
+        padding: 8px 20px !important;
+        margin: 5px 0;
+        font-size: 11px;
+        background: var(--rishi-color);
+        color: var(--rishi-text-color) !important;
+        border-radius: 20px;
+    }
+
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:focus,
+    .navbar-default .navbar-nav > .open > a:hover {
+        color: var(--rishi-color) !important;
+        background-color: transparent !important;
+    }
+
+    .dropdown-menu {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .dropdown-menu > li > a {
+        color: var(--rishi-text-color) !important;
+        padding: 8px 15px 8px 25px !important;
+    }
+
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+        color: var(--rishi-color) !important;
+        background-color: transparent !important;
+    }
+}

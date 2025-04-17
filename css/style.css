@@ -202,15 +202,58 @@ a:hover{
 .navbar-default.sticky_menu .navbar-brand p{
     color: var(--rishi-color);
 }
+/* Update navbar styles */
 .navbar-default .navbar-nav > li > a {
     color: var(--rishi-text-color);
     font-size: 16px;
     font-weight: 600;
     padding: 0;
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 20px; /* reduced from 30px for more space */
     text-transform: capitalize;
     transition: all 0.3s ease;
+}
+
+/* Add dropdown styles */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown > a::after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: var(--rishi-bg-color);
+    border: 1px solid var(--rishi-color);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    min-width: 200px;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 8px 20px;
+    color: var(--rishi-text-color);
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+    color: var(--rishi-color);
+    background: rgba(102, 107, 214, 0.1);
+    padding-left: 25px;
 }
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
@@ -508,3 +551,58 @@ a:hover{
 /* ----------------------------------------------------------------
     [ End Footer ]
 -----------------------------------------------------------------*/
+
+/* Blog link styles */
+.nav-blog-container {
+    display: inline-block;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.blog-link {
+    background: var(--rishi-color);
+    padding: 6px 12px !important;
+    border-radius: 25px;
+    border: 1px solid var(--rishi-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.3rem !important;
+}
+
+.blog-link:hover {
+    background: transparent;
+    color: var(--rishi-color) !important;
+}
+
+.blog-link i {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+/* Override Bootstrap default dropdown styles */
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: var(--rishi-color) !important;
+    background-color: transparent !important;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: var(--rishi-color) !important;
+    background-color: transparent !important;
+}
+
+/* Ensure dropdown menu background stays consistent */
+.dropdown-menu {
+    background: var(--rishi-bg-color) !important;
+    border: 1px solid var(--rishi-color) !important;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: var(--rishi-color) !important;
+    background-color: transparent !important;
+}
