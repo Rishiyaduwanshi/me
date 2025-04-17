@@ -73,6 +73,8 @@
 	<link rel="stylesheet" href="./utils/css/certifications.css">
 	<link rel="stylesheet" href="./utils/scrollbar.css">
 	<link rel="stylesheet" href="./utils/animations.css">
+	<link rel="stylesheet" href="./utils/css/education.css">
+	<link rel="stylesheet" href="./utils/css/projects.css">
 	<script src="./utils/animations.js"></script>
 </head>
 
@@ -148,8 +150,9 @@
 							<span class="cd-words-wrapper">
 								<b class="is-visible fw_300">Abhinav Prakash</b>
 								<b class="fw_300">Full stack Developer </b>
-								<b class="fw_300">Wordpress Developer</b>
 								<b class="fw_300">MERN Developer</b>
+								<b class="fw_300">Free lancer</b>
+								<b class="fw_300">Wordpress Developer</b>
 							</span>
 						</h1>
 						<a href="https://github.com/rishiyaduwanshi" class="banner_btn">View Work</a>
@@ -167,7 +170,7 @@
 		<div class="container">
 			<div class="col-md-12 col-sm-12-col-xs-12">
 				<div class="section_heading text-center">
-					<h2>About <span>MySelf</span></h2>
+					<h2>About <span>Me</span></h2>
 					<div class="sm_border"></div>
 				</div>
 			</div>
@@ -204,7 +207,6 @@
 											<span> Name </span> : Abhinav Prakash
 										</div>
 									</div>
-
 
 									<div class="col-md-12">
 										<div class="ct_about">
@@ -243,8 +245,8 @@
 	<section class="tech-section dark_bg section_padding" id="technologies">
 		<h2>Technologies</h2>
 		<div class="tech-container">
-			
-			<div class="tech-icons" >
+
+			<div class="tech-icons">
 				<i class="devicon-nodejs-plain-wordmark colored"></i>
 				<i class="devicon-git-plain colored"></i>
 				<i class="devicon-docker-plain colored"></i>
@@ -342,186 +344,77 @@
 	</section>
 	<!-- END SERVICE -->
 
-	<!-- START RESUM -->
-	<section id="resume" class="dark_bg section_padding">
+	<!-- START EDUCATION -->
+	<section id="education" class="dark_bg section_padding">
 		<div class="container">
-			<div class="col-md-12 col-sm-12-col-xs-12">
-				<div class="section_heading text-center">
-					<h2>My <span>Resume</span></h2>
-					<p>Here’s an overview of my educational background and project experience, showcasing my journey and
-						expertise in the tech field.</p>
-					<div class="sm_border"></div>
-				</div>
+			<div class="section_heading text-center">
+				<h2>My <span>Education</span></h2>
+				<p>Academic qualifications and professional training</p>
+				<div class="sm_border"></div>
 			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<div class="resume-container wow fadeInLeft">
-						<div class="row">
-							<h3><i class="fa fa-graduation-cap"></i>Education:</h3>
-							<div class="col-md-12">
-								<div class="single_resume">
-									<!-- <strong>2018 - 2020</strong> -->
-									<h5>Intermediate Maths CBSE</h5>
-									<p>Rose Public School <br>
-										Darbhanga Bihar </p>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="single_resume">
-									<!-- <strong>2022-2026</strong> -->
-									<h5>Btech CSE</h5>
-									<p>Lovely Professional University (LPU) <br>
-										Jalandhar Punjab</p>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="single_resume">
-									<!-- <strong>2010 - 2013</strong> -->
-									<h5>Cloud Computing with AWS</h5>
-									<p>Gokboru Tech PVT. limited <br>
-										Noida, UP</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<div class="resume-container wow fadeInRight">
-						<div class="row">
-							<h3><i class="fa fa-code"></i>Projects:</h3>
-							<div class="col-md-12">
-								<div class="single_resume">
-									<!-- <strong>2014 - 2015</strong> -->
-									<h5>School Website</h5>
-									<p>Developed a fully functional school website using WordPress, enhancing online
-										presence and user engagement.</p>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="single_resume">
-									<!-- <strong>2016 - 2017</strong> -->
-									<h5>InShare</h5>
-									<p>Created a file-sharing website that allows users to upload, and share files upto
-										100mb. </p>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="single_resume">
-									<!-- <strong>2018 - 2019</strong> -->
-									<h5>REST API</h5>
-									<p>Developed a basic REST API with GET, POST, PATCH, and DELETE operations, enabling
-										comprehensive CRUD functionality.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div id="educationContainer" class="education-container">
+				<!-- Education items will be loaded here -->
 			</div>
 		</div>
 	</section>
-	<!-- END RESUM -->
+	<!-- END EDUCATION -->
 
-
-	<!-- START GITHUB SHOWCASE -->
-	<section id="github-showcase" class="dark_bg section_padding">
+	<!-- START PROJECTS -->
+	<section id="projects" class="dark_bg section_padding">
 		<div class="container">
 			<div class="section_heading text-center">
-				<h2>GitHub <span>Showcase</span></h2>
-				<p>My open-source contributions and coding activity</p>
+				<h2>My <span>Projects</span></h2>
+				<p>Showcasing innovative solutions and technical expertise</p>
+				<div class="sm_border"></div>
+			</div>
+			<div id="projectsContainer" class="projects-grid">
+				<!-- Projects will be loaded dynamically -->
+			</div>
+		</div>
+	</section>
+	<!-- END PROJECTS -->
+
+	<section id="certifications" class="dark_bg section_padding">
+		<div class="container">
+			<div class="section_heading text-center">
+				<h2>My <span>Certifications</span></h2>
+				<p>Professional certifications that validate my expertise</p>
 				<div class="sm_border"></div>
 			</div>
 
-			<!-- GitHub Stats Cards -->
-			<div class="row text-center mb-5">
-				<div class="col-md-4 col-sm-6">
-					<div class="single-service wow fadeInDown" data-wow-delay="0.2s">
-						<i class="fa fa-code-fork"></i>
-						<h4>Repositories</h4>
-						<div class="ct_about" id="repo-count">Loading...</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="single-service wow fadeInDown" data-wow-delay="0.3s">
-						<i class="fa fa-star"></i>
-						<h4>Total Stars</h4>
-						<div class="ct_about" id="stars-count">Loading...</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="single-service wow fadeInDown" data-wow-delay="0.4s">
-						<i class="fa fa-users"></i>
-						<h4>Followers</h4>
-						<div class="ct_about" id="followers-count">Loading...</div>
-					</div>
-				</div>
-			</div>
+			<div style="position: relative;">
+				<button class="cert-scroll-btn cert-scroll-left">
+					<i class="fa fa-chevron-left"></i>
+				</button>
 
-			<!-- GitHub Activity Graphs -->
-			<div class="row">
-				<div class="col-md-6">
-					<img class="img-responsive wow fadeInLeft" data-wow-delay="0.3s"
-						 src="https://github-readme-stats.vercel.app/api?username=rishiyaduwanshi&show_icons=true&theme=transparent&bg_color=0d1117&hide_border=true&text_color=ffffff&title_color=your-title-color&icon_color=your-icon-color" 
-						 alt="GitHub Stats">
+				<div class="certificates-container" id="certificatesContainer">
+					<!-- Certificates will be loaded dynamically -->
 				</div>
-				<div class="col-md-6">
-					<img class="img-responsive wow fadeInRight" data-wow-delay="0.3s"
-						 src="https://github-readme-streak-stats.herokuapp.com/?user=rishiyaduwanshi&theme=transparent&background=0d1117&hide_border=true&ring=your-color&fire=your-color&currStreakLabel=ffffff" 
-						 alt="GitHub Streak">
-				</div>
-			</div>
 
-			<!-- View More Button -->
-			<div class="text-center" style="margin-top: 40px;">
-				<a href="https://github.com/rishiyaduwanshi" target="_blank" class="btn btn-default main_btn">
-					<i class="fa fa-github"></i> View Full Profile
-				</a>
+				<button class="cert-scroll-btn cert-scroll-right">
+					<i class="fa fa-chevron-right"></i>
+				</button>
 			</div>
 		</div>
+
+		<!-- Certificate Modal -->
+		<div id="certModal" class="cert-modal">
+			<span class="close-modal">&times;</span>
+			<img id="certModalImg" class="modal-content">
+		</div>
 	</section>
-	<!-- END GITHUB SHOWCASE -->
+	<!-- END CERTIFICATIONS -->
 
-<section id="certifications" class="dark_bg section_padding">
-    <div class="container">
-        <div class="section_heading text-center">
-            <h2>My <span>Certifications</span></h2>
-            <p>Professional certifications that validate my expertise</p>
-            <div class="sm_border"></div>
-        </div>
+	<!-- START RECOMMENDATIONS -->
+	<section id="recommendations" class="recommendations-section dark_bg section_padding">
+		<h2 id="recommendationsHeading">Recommendations</h2>
+		<p id="recommendationsDescription">Loading...</p>
 
-        <div style="position: relative;">
-            <button class="cert-scroll-btn cert-scroll-left">
-                <i class="fa fa-chevron-left"></i>
-            </button>
-            
-            <div class="certificates-container" id="certificatesContainer">
-                <!-- Certificates will be loaded dynamically -->
-            </div>
-
-            <button class="cert-scroll-btn cert-scroll-right">
-                <i class="fa fa-chevron-right"></i>
-            </button>
-        </div>
-    </div>
-
-    <!-- Certificate Modal -->
-    <div id="certModal" class="cert-modal">
-        <span class="close-modal">&times;</span>
-        <img id="certModalImg" class="modal-content">
-    </div>
-</section>
-<!-- END CERTIFICATIONS -->
-
-<!-- START RECOMMENDATIONS -->
-<section id="recommendations" class="recommendations-section dark_bg section_padding">
-    <h2 id="recommendationsHeading">Recommendations</h2>
-    <p id="recommendationsDescription">Loading...</p>
-    
-    <div class="referral-cards" id="referralCardsContainer">
-        <!-- Cards will be loaded dynamically -->
-    </div>
-</section>
-<!-- *--------------- END Recommendations------------------------* -->
+		<div class="referral-cards" id="referralCardsContainer">
+			<!-- Cards will be loaded dynamically -->
+		</div>
+	</section>
+	<!-- *--------------- END Recommendations------------------------* -->
 
 	<!-- START CONTACT -->
 	<section id="contact" class="dark_bg section_padding">
@@ -600,21 +493,23 @@
 	<script src="./utils/topToPage.js"></script>
 	<script src="./utils/github.js"></script>
 	<script src="utils/js/certificates.js"></script>
+	<script src="./utils/js/education.js"></script>
+	<script src="./utils/js/projects.js"></script>
 	<!-- End Latest jQuery -->
 
-	
+
 
 
 	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function () {
-			emailjs.init("Qi7X8NGxS37QKj_sO"); 
+			emailjs.init("Qi7X8NGxS37QKj_sO");
 		})();
 	</script>
 
 	<script>
 		document.getElementById('contactForm').addEventListener('submit', function (event) {
-			event.preventDefault(); 
+			event.preventDefault();
 
 			const form = this;
 			const templateParams = {
@@ -630,7 +525,7 @@
 					alert("Message Sent Successfully!");
 
 					const acknowledgmentParams = {
-						name: form.name.value, 
+						name: form.name.value,
 						email: form.email.value
 					};
 
@@ -649,35 +544,35 @@
 		});
 	</script>
 
-	<script >
+	<script>
 		async function loadRecommendations() {
 			try {
 				const response = await fetch('/data/referrals.json');
 				const data = await response.json();
-				
-				document.getElementById('recommendationsHeading').textContent = 
+
+				document.getElementById('recommendationsHeading').textContent =
 					data.sectionContent.heading;
-				document.getElementById('recommendationsDescription').textContent = 
+				document.getElementById('recommendationsDescription').textContent =
 					data.sectionContent.description;
-				
+
 				const container = document.getElementById('referralCardsContainer');
 				container.innerHTML = '';
-				
+
 				Object.entries(data.referrals).forEach(([key, referral]) => {
 					container.innerHTML += `
 						<div class="referral-card" data-referral="${key}">
 							<img src="${referral.image}" alt="${referral.name} Logo">
 							<h3>${referral.name}</h3>
 							<p>${referral.description}</p>
-							${referral.isCustomButton ? 
-								`<a href="${referral.url}" target="_blank">
+							${referral.isCustomButton ?
+							`<a href="${referral.url}" target="_blank">
 									<img src="${referral.buttonImage}" 
 										 alt="${referral.name} Badge" 
 										 class="digital-btn-logo"/>
 								</a>` :
-								`<a href="${referral.url}" target="_blank" 
+							`<a href="${referral.url}" target="_blank" 
 									class="hostinger-btn-logo">Get ${referral.name}</a>`
-							}
+						}
 						</div>
 					`;
 				});
@@ -685,11 +580,11 @@
 				console.error('Error loading recommendations:', error);
 			}
 		}
-		
+
 		document.addEventListener('DOMContentLoaded', loadRecommendations);
 	</script>
 
-	
+
 
 </body>
 

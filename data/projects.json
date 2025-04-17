@@ -1,0 +1,47 @@
+{
+    "projects": [
+      {
+        "name": "Docres",
+        "description": "An AI-powered document search and question-answering system that helps you instantly retrieve relevant information from your documents. Ideal for handling large datasets. Currently under active development.",
+        "technologies": ["Milvus DB", "JS", "Node JS", "Express JS", "Mongo DB", "Postman", "JWT", "Winston", "Morgan", "Tailwind CSS"],
+        "repo": "https://github.com/rishiyaduwanshi/docres",
+        "duration" : "Ongoing development"
+      },
+      {
+        "name": "portpilot",
+        "description": "A handy CLI tool that lets developers map local development ports to custom domains. Test your projects with real domain names locally—no extra server config needed! Works on Windows, macOS, and Linux.",
+        "technologies": ["Node JS", "esbuild"],
+        "repo": "https://github.com/rishiyaduwanshi/portpilot",
+        "duration" :"April 2025"
+      },
+      {
+        "name": "jobBoard",
+        "description": "A fully responsive job recruitment platform built with React and Vite. Employers can post jobs and manage applicants, while job seekers can apply directly—smooth experience on both desktop and mobile.",
+        "technologies": ["React JS", "JS", "Node JS", "Express JS", "Mongo DB", "JWT", "Winston", "Morgan", "Tailwind"],
+        "repo": "https://github.com/rishiyaduwanshi/jobboard",
+        "duration" :"March 2025 - March 2025"
+      },
+      {
+        "name": "autoLoginLPU",
+        "description": "A Chrome extension that auto-fills and submits your login credentials on LPU portals like UMS and OAS. Saves time and removes the hassle of repetitive logins. Available on Chrome Web Store.",
+        "technologies": ["HTML", "CSS", "JS"],
+        "repo": "https://github.com/Rishiyaduwanshi/autoLoginLPU",
+        "duration" :"Nov 2025 - Dec 2025"
+      },
+      {
+        "name": "REST API",
+        "description": "A basic RESTful API that supports full CRUD operations using GET, POST, PATCH, and DELETE. Great for backend practice and understanding how APIs interact with databases.",
+        "technologies": ["Node.js", "Express JS", "MongoDB"],
+        "repo": "https://github.com/Rishiyaduwanshi/restapi",
+        "duration" :"June 2024 - July 2024"
+      },
+      {
+        "name": "Portfolio",
+        "description": "My personal portfolio site showcasing my skills, projects, and contact info. Features animated backgrounds using Particle.js, smooth transitions, and a clean UI built with Bootstrap.",
+        "technologies": ["HTML", "CSS", "JS", "Cloudflare", "Particle JS", "Bootstrap CSS"],
+        "repo": "https://github.com/Rishiyaduwanshi/me",
+        "duration" :"July 2023 - Aug 2023"
+      }
+    ]
+  }
+  

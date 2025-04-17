@@ -1,0 +1,120 @@
+#projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.project-item {
+    background: var(--rishi-bg-color);
+    border: 1px solid var(--rishi-color);
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    width: 100%;
+}
+
+.project-item:hover { 
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(102, 107, 214, 0.2);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    color: var(--rishi-color);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.project-duration {
+    color: var(--rishi-text-color);
+    font-size: 12px;
+    background: rgba(102, 107, 214, 0.1);
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: 1px solid var(--rishi-color);
+}
+
+.project-description {
+    color: var(--rishi-text-color);
+    line-height: 26px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tech-tag {
+    background: rgba(102, 107, 214, 0.1);
+    color: var(--rishi-color);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    border: 1px solid var(--rishi-color);
+}
+
+.grp{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--rishi-color);
+    text-decoration: none;
+    padding: 4px 30px;
+    border: 1px solid var(--rishi-color);
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: var(--rishi-color);
+    color: var(--rishi-bg-color);
+}
+
+@media only screen and (max-width: 991px) {
+    #projectsContainer {
+        padding: 30px 15px;
+    }
+    
+    .project-title {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .project-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
