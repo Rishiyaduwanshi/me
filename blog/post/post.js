@@ -4,7 +4,7 @@ async function fetchPost() {
     
     if (!gistId) {
         // Change the redirect to absolute path
-        window.location.href = '/Blog';
+        window.location.href = '/blog';
         return;
     }
 
