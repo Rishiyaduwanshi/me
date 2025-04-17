@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav's Blog</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Abhinav Prakash's technical blog about web development, programming, and technology">
+    <meta name="keywords" content="web development, programming, MERN stack, JavaScript, React, Node.js">
+    <meta name="author" content="Abhinav Prakash">
+    <meta property="og:title" content="Abhinav's Blog">
+    <meta property="og:description" content="Technical insights and tutorials about web development and programming">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://abhinavprakash.me/blog">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800" rel="stylesheet">
+    <link href="../fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="blog-header">
+        <div class="container">
+            <nav class="blog-nav">
+                <div class="nav-links">
+                    <a href="/" class="nav-brand">Abhinav Blogs</a>
+                </div>
+                <div class="grp">
+
+                    <a href="../#contact" class="contact-link">Contact</a>
+                    <a href="/" class="contact-link">Back to Portfolio</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Remove the duplicate nav that was here -->
+
+    <!-- Blog List Section -->
+    <main class="blog-main">
+        <div class="container">
+            <h1 class="blog-title">My Blog Posts</h1>
+            <div class="blog-grid" id="blogPosts">
+                <!-- Blog posts will be loaded here -->
+                <div class="loading">Loading posts...</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="blog-footer">
+        <div class="container">
+            <p>
+                CopyRight &copy; <span id="currentYear"></span> Abhinav Prakash | All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <script src="../utils/currentYear.js"></script>
+    <script src="./blog.js"></script>
+</body>
+
+</html>

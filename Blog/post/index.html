@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - Abhinav's Blog</title>
+    <!-- SEO Meta Tags - Will be updated dynamically -->
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="article">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800" rel="stylesheet">
+    <link href="../../fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+    <link href="./post.css" rel="stylesheet">
+</head>
+<body>
+    <header class="blog-header">
+        <div class="container">
+            <nav class="blog-nav">
+                <a href="/Blog" class="nav-brand">
+                    <i class="fa fa-chevron-left"></i> Back to Blog
+                </a>
+                <a href="/" class="contact-link">Portfolio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="blog-main">
+        <div class="container">
+            <article class="blog-post" id="blogPost">
+                <div class="loading">
+                    <i class="fa fa-spinner fa-spin"></i> Loading post...
+                </div>
+            </article>
+        </div>
+    </main>
+    
+    <footer class="blog-footer">
+        <div class="container">
+            <p>CopyRight &copy; <span id="currentYear"></span> Abhinav Prakash | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="../../utils/currentYear.js"></script>
+    <script src="./post.js"></script>
+</body>
+</html>
