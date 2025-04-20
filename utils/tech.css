@@ -1,80 +1,195 @@
+/* Base styles */
 .tech-section {
     background-color: var(--rishi-bg-color);
-    /* padding: 50px; */
     text-align: center;
+    padding: var(--section-padding, 40px) 0;
 }
 
-.tech-section h2 {
-    color: var(--rishi-text-color);
-    font-size: 3em;
-    margin-bottom: 40px;
-    letter-spacing: 2px;
-}
-
+/* Grid Container */
 .tech-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    /* Space between icons */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: clamp(1rem, 2vw, 2rem);
+    padding: 1rem;
+    max-width: var(--max-width, 1400px);
+    margin: 0 auto;
 }
 
+/* Category Card */
+.tech-category {
+    --card-padding: 1.5rem;
+    --card-bg: rgba(255, 255, 255, 0.02);
+    --card-border: rgba(102, 107, 214, 0.2);
+    --card-radius: 12px;
+    
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    padding: var(--card-padding);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-category:hover {
+    transform: translateY(-100px);
+    box-shadow: 0 5px 15px rgba(102, 107, 214, 0.1);
+}
+
+/* Category Headers */
+.tech-category h3 {
+    color: var(--rishi-color);
+    font-size: clamp(1.5rem, 2vw, 1.3rem);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.tech-category h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: var(--rishi-color);
+    opacity: 0.5;
+}
+
+/* Icons Container */
 .tech-icons {
     display: flex;
     flex-wrap: wrap;
+    gap: clamp(1rem, 2vw, 1.5rem);
     justify-content: center;
-    gap: 20px;
-    /* Space between icons */
+    align-items: center;
+    flex: 1;
+    padding: 0.5rem;
 }
 
+/* Individual Icons */
 .tech-icons i,
 .tech-icon {
-    font-size: 3em;
-    /* Size for icons */
-    color: var(--rishi-color);
-    /* Base color for icons */
-    transition: transform 0.3s ease, filter 0.3s ease;
-    /* Smooth transitions */
-    padding: 10px;
-    background-color: var(--rishi-bg-color);
-    /* Background color for contrast */
-    border-radius: 50%;
-    /* Circular background */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
-    /* Enhanced shadow for better visibility */
-}
-
-.tech-icons i:hover,
-.tech-icon:hover {
-    transform: scale(1.2);
-    /* Slight scaling effect */
-    filter: drop-shadow(0 0 10px var(--rishi-color));
-    /* Enhanced shadow on hover */
-    color: var(--rishi-text-color);
-    /* Change icon color on hover */
-    background-color: var(--rishi-color);
-    /* Highlight background on hover */
+    --icon-size: clamp(2em, 3vw, 2.5em);
+    --icon-padding: 0.5rem;
+    --icon-bg: rgba(0, 0, 0, 0.2);
+    
+    font-size: var(--icon-size);
+    padding: var(--icon-padding);
+    border-radius: 8px;
+    background: var(--icon-bg);
+    transition: all 0.3s ease;
 }
 
 .tech-icon {
-    width: 60px;
-    /* Adjust size as necessary */
-    height: 60px;
-    /* Adjust size as necessary */
-    fill: var(--rishi-text-color);
-    /* Adjust fill color if needed */
+    width: clamp(35px, 5vw, 45px);
+    height: clamp(35px, 5vw, 45px);
+    object-fit: contain;
 }
 
+/* Icon Hover Effects */
+.tech-icons i:hover,
+.tech-icon:hover {
+    transform: scale(1.1);
+    background: rgba(102, 107, 214, 0.1);
+    box-shadow: 0 0 15px rgba(102, 107, 214, 0.3);
+}
 
-@media only screen and (max-width: 480px) {
-    .tech-section h2 {
-        font-size: 2em
+/* Tooltip System */
+.tech-icons i[title],
+.tech-icon[title] {
+    position: relative;
+    cursor: pointer;
+}
+
+.tech-icons i[title]::after,
+.tech-icon[title]::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.tech-icons i[title]:hover::after,
+.tech-icon[title]:hover::after {
+    opacity: 1;
+    visibility: visible;
+    bottom: -25px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .tech-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tech-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
     }
 
-    .tech-icons i,
-    .tech-icon {
-        /* font-size: 2em; */
-        padding: 8px;
+    .tech-category {
+        --card-padding: 1rem;
     }
+}
 
+@media screen and (max-width: 480px) {
+    .tech-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-category h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Animation for new categories */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tech-category {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Utility classes for future additions */
+.tech-category.featured {
+    border-color: var(--rishi-color);
+    background: rgba(102, 107, 214, 0.05);
+}
+
+.tech-category.new::before {
+    content: 'New';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--rishi-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
