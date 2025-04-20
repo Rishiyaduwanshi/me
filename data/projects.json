@@ -8,21 +8,21 @@
         "duration" : "Ongoing development"
       },
       {
-        "name": "portpilot",
+        "name": "Portpilot",
         "description": "A handy CLI tool that lets developers map local development ports to custom domains. Test your projects with real domain names locally—no extra server config needed! Works on Windows, macOS, and Linux.",
         "technologies": ["Node JS", "esbuild"],
         "repo": "https://github.com/rishiyaduwanshi/portpilot",
         "duration" :"April 2025"
       },
       {
-        "name": "jobBoard",
+        "name": "JobBoard",
         "description": "A fully responsive job recruitment platform built with React and Vite. Employers can post jobs and manage applicants, while job seekers can apply directly—smooth experience on both desktop and mobile.",
         "technologies": ["React JS", "JS", "Node JS", "Express JS", "Mongo DB", "JWT", "Winston", "Morgan", "Tailwind"],
         "repo": "https://github.com/rishiyaduwanshi/jobboard",
         "duration" :"March 2025 - March 2025"
       },
       {
-        "name": "autoLoginLPU",
+        "name": "AutoLoginLPU",
         "description": "A Chrome extension that auto-fills and submits your login credentials on LPU portals like UMS and OAS. Saves time and removes the hassle of repetitive logins. Available on Chrome Web Store.",
         "technologies": ["HTML", "CSS", "JS"],
         "repo": "https://github.com/Rishiyaduwanshi/autoLoginLPU",

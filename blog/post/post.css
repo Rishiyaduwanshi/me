@@ -38,9 +38,17 @@
     font-weight: 600;
 }
 
-.blog-content h1 { font-size: 2em; }
-.blog-content h2 { font-size: 1.75em; }
-.blog-content h3 { font-size: 1.5em; }
+.blog-content h1 {
+    font-size: 2em;
+}
+
+.blog-content h2 {
+    font-size: 1.75em;
+}
+
+.blog-content h3 {
+    font-size: 1.5em;
+}
 
 .blog-content ul {
     padding-left: 2em;
@@ -86,6 +94,10 @@
 
 .copy-btn:hover {
     transform: scale(1.1);
+}
+
+.contact-link {
+    font-size: 1.2rem;
 }
 
 .table-container {
@@ -181,29 +193,6 @@
     line-height: 1.5;
 }
 
-/* Responsive improvements */
-@media (max-width: 768px) {
-    .table-container {
-        margin: 1rem -1rem;
-        border-radius: 0;
-        border-left: 0;
-        border-right: 0;
-    }
-    
-    .blog-content th,
-    .blog-content td {
-        padding: 0.75rem;
-        font-size: 0.9rem;
-    }
-    
-    .code-block {
-        margin: 1rem -1rem;
-        border-radius: 0;
-        border-left: 0;
-        border-right: 0;
-    }
-}
-
 .blog-content blockquote {
     border-left: 4px solid var(--rishi-color);
     padding-left: 1rem;
@@ -216,6 +205,10 @@
 
 /* Responsive improvements */
 @media (max-width: 768px) {
+    .nav-link {
+        font-size: 0.8rem;
+    }
+
     .blog-post {
         padding: 1rem;
         margin: 0.5rem;
@@ -234,6 +227,35 @@
     .blog-content table {
         display: block;
         overflow-x: auto;
+    }
+
+
+    .blog-post h1 {
+        font-size: 2rem;
+    }
+
+    .blog-content {
+        font-size: 1rem;
+    }
+
+    .table-container {
+        margin: 1rem -1rem;
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .blog-content th,
+    .blog-content td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .code-block {
+        margin: 1rem -1rem;
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
     }
 }
 
@@ -287,18 +309,4 @@
 
 .blog-content a:hover {
     border-bottom-color: var(--rishi-color);
-}
-
-@media (max-width: 768px) {
-    .blog-post {
-        padding: 1.5rem;
-    }
-
-    .blog-post h1 {
-        font-size: 2rem;
-    }
-
-    .blog-content {
-        font-size: 1rem;
-    }
 }

@@ -1,19 +1,22 @@
 {
     "education": [
         {
-            "degree": "Intermediate Maths CBSE",
-            "institution": "Rose Public School",
-            "location": "Darbhanga Bihar"
-        },
-        {
             "degree": "Btech CSE",
             "institution": "Lovely Professional University (LPU)",
-            "location": "Jalandhar Punjab"
+            "location": "Jalandhar Punjab",
+            "duration": "2022-26"
         },
         {
             "degree": "Cloud Computing with AWS",
             "institution": "Gokboru Tech PVT. limited",
-            "location": "Noida, UP"
+            "location": "Noida, UP",
+            "duration": "2024"
+        },
+        {
+            "degree": "Intermediate Maths CBSE",
+            "institution": "Rose Public School",
+            "location": "Darbhanga Bihar",
+            "duration": "2018-20"
         }
     ]
 }

@@ -12,6 +12,7 @@ async function displayEducation() {
                         <h3>${edu.degree}</h3>
                         <div class="institution">${edu.institution}</div>
                         <div class="location">${edu.location}</div>
+                        <div class="duration">${edu.duration}</div>
                     </div>
                 </div>
             `;
