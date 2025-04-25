@@ -1,0 +1,77 @@
+{
+    "freelanceExperience": [
+        {
+            "name": "Dalwalee Investment",
+            "website": "https://paperarth.com/dalwal",
+            "description": "Designed a clean, professional website for Paperarth, focusing on the brand's value proposition and user experience enhancements.",
+            "tasks": [
+                "Enhanced homepage design with a strong tagline",
+                "Added client testimonials and CTA buttons",
+                "Optimized service pages with detailed descriptions and case studies",
+                "Improved SEO, integrated Google Analytics, and set up security features"
+            ],
+            "tech_stack": [
+                "HTML",
+                "CSS",
+                "PHP",
+                "JavaScript",
+                "WordPress",
+                "SEO"
+            ]
+        },
+        {
+            "name": "Smartites",
+            "website": "https://smartites.com",
+            "description": "Worked on SEO improvements and setup of various website optimizations for Smartites' WordPress site.",
+            "tasks": [
+                "SEO Improvement: Keyword Research, On-Page SEO, and Technical SEO",
+                "Added Google Analytics for better tracking and monitoring",
+                "Set up security features: Regular updates, security plugins, brute force protection",
+                "Set up SMTP for email system, configured SMTP in WordPress, and tested emails"
+            ],
+            "tech_stack": [
+                "WordPress",
+                "PHP",
+                "CSS",
+                "SEO",
+                "Google Analytics",
+                "SMTP",
+                "Security Plugins"
+            ]
+        },
+        {
+            "name": "Satta Bazar Starline",
+            "website": "https://sattabazarstarline.com",
+            "description": "Built a fast-loading and responsive platform for daily game results with real-time updates.",
+            "tasks": [
+                "Designed a user-friendly interface for displaying game results",
+                "Ensured mobile responsiveness and fast loading speeds"
+            ],
+            "tech_stack": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "EJS",
+                "MongoDB",
+                "Google Analytics"
+            ]
+        },
+        {
+            "name": "Paramount Grove School",
+            "website": "https://paramountgrove.in",
+            "description": "Created an informative and easily navigable website for Paramount Grove School, showcasing their services and updates.",
+            "tasks": [
+                "Built homepage with clear navigation and essential school information",
+                "Created sections for admissions, notices, and contact details",
+                "Optimized website for accessibility and ease of use"
+            ],
+            "tech_stack": [
+                "HTML",
+                "CSS",
+                "WordPress",
+                "Google Analytics"
+            ]
+        }
+    ],
+    "companyExperince": []
+}
