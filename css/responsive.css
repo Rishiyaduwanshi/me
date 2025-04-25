@@ -136,6 +136,14 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .main_header.sticky_menu {
+        padding: 5px 0;
+    }
+
+    .main_header.sticky_menu .navbar-brand p {
+        font-size: 20px;
+    }
+
     nav#navbar {
         background: var(--rishi-bg-color);
         border: 1px solid var(--rishi-color);
@@ -144,10 +152,16 @@
         position: absolute;
         right: 15px;
         text-align: center;
-        top: 35px;
+        top: 50px; /* Adjusted for sticky header */
         width: 280px;
         z-index: 1000;
     }
+
+    .main_header.sticky_menu nav#navbar {
+        background: rgba(0, 0, 44, 0.95);
+        backdrop-filter: blur(10px);
+    }
+
 
     .navbar-default .navbar-nav > li > a {
         color: var(--rishi-text-color) !important;

@@ -268,49 +268,36 @@ a:hover{
 	color: var(--rishi-color);
 	background-color: transparent;
 }
-.main_header.sticky_menu {
-    position: fixed;
-    width: 100%;
-    padding: 10px 0;
+.header_area {
+    position: sticky;
     top: 0;
-    background: var(--rishi-bg-color);
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 44, 0.95);
+    backdrop-filter: blur(10px);
     transition: all 0.4s ease;
-    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.32);
-    -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.32);
-    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
-    z-index: 999;
 }
-.main_header.sticky_menu .navbar-nav > li > a {
-	color: var(--rishi-text-color);
-	transition: all 0.3s ease;
+
+.main_header {
+    padding: 10px 0;
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 15px rgba(102, 107, 214, 0.1);
 }
-.main_header.dark_bg_menu.sticky_menu .navbar-nav > li > a{
-	color: var(--rishi-text-color) !important;
-	transition: all 0.3s ease;
-}
-.main_header.sticky_menu .navbar-nav > li > a:hover{ color: var(--rishi-color) !important }
-.main_header.sticky_menu .navbar-nav>.active>a,
-.main_header.dark_bg_menu.sticky_menu .navbar-nav > li > a:hover,
-.main_header.sticky_menu .navbar-nav>.active>a:hover,
-.main_header.sticky_menu .navbar-nav>.active>a:focus{
-    color: var(--rishi-color) !important;
-    background-color: transparent;
-}
+
+/* Removing all duplicate header_area, navbar styles, and sticky_menu related code */
+
 .navbar-default .navbar-toggle {
     border: none;
     padding: 0;
-	color: var(--rishi-color);
+    color: var(--rishi-color);
     font-size: 20px;
-	margin-top: 10px;
+    margin-top: 10px;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: var(--rishi-text-color);
 }
-.main_header.sticky_menu .navbar-toggle .icon-bar {
-    background-color: var(--rishi-color);
-}
+
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
     background-color: transparent;

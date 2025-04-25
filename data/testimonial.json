@@ -1,0 +1,20 @@
+{
+    "testimonials": [
+      {
+        "name": "Rajdeep Bhowmick",
+        "website": "https://paperarth.com/dalwal",
+        "message": "The website design and functionality exceeded our expectations. It was delivered quickly and looks professional. We’re happy to have worked with you!"
+      },
+      {
+        "name": "Rajesh Mankads",
+        "website": "https://smartites.com",
+        "message": "Very satisfied with the website! Clean UI, responsive design, and the backend runs smoothly. Great communication throughout the project."
+      },
+      {
+        "name": "Anurag Kumar Singh",
+        "website": "https://sattabazarstarline.com",
+        "message": "Impressed with the speed and quality of delivery. The site works perfectly across devices and loads fast. Totally worth it!"
+      }
+    ]
+  }
+  
